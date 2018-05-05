@@ -1,5 +1,8 @@
 name: fluttering
 description: A Flutter project.
+version: 0.0.1
+author: Alfredo Martel Revuelta
+homepage: https://github.com/amartelr/fluttering
 
 dependencies:
   flutter:
@@ -8,6 +11,11 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^0.1.0
+  cached_network_image: "^0.4.1+1"
+  geolocation: "^0.2.1"
+  url_launcher: "^3.0.0"
+  font_awesome_flutter: 6.0.0
+  #  google_sign_in: "^3.0.3"
 
 dev_dependencies:
   flutter_test:
@@ -26,8 +34,8 @@ flutter:
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
-  # assets:
-  #  - images/a_dot_burr.jpeg
+  assets:
+    - assets/images/lascanteras_beach.jpg
   #  - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
@@ -41,17 +49,17 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
-  # fonts:
-  #   - family: Schyler
-  #     fonts:
-  #       - asset: fonts/Schyler-Regular.ttf
-  #       - asset: fonts/Schyler-Italic.ttf
-  #         style: italic
-  #   - family: Trajan Pro
-  #     fonts:
-  #       - asset: fonts/TrajanPro.ttf
-  #       - asset: fonts/TrajanPro_Bold.ttf
-  #         weight: 700
+  fonts:
+     - family: Raleway
+       fonts:
+         - asset: assets/fonts/Raleway-Regular.ttf
+         - asset: assets/fonts/Raleway-Italic.ttf
+           style: italic
+     - family: RobotoMono
+       fonts:
+         - asset: assets/fonts/RobotoMono-Regular.ttf
+         - asset: assets/fonts/RobotoMono-Bold.ttf
+           weight: 700
   #
   # For details regarding fonts from package dependencies, 
   # see https://flutter.io/custom-fonts/#from-packages
